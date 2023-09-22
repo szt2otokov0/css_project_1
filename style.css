@@ -9,11 +9,14 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+div {
+    border-radius: 20px;
+}
+
 body > div {
     background-color: rgb(255,255,255,.5);
     height: 90%;
     width: 90%;
-    border-radius: 1px;
     text-align: center;
     width: 100%;
     margin: auto;
@@ -26,20 +29,28 @@ body > div {
     flex-direction: column;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 main > div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .card {
-    min-width: 10rem;
+    min-width: 15rem;
     max-width: 20vw;
     min-height: 5rem;
     max-height: max-content;
     margin:1em;
-    border-radius: 20px;
     background-color: lightgreen;
 }
 
@@ -55,5 +66,4 @@ main > div{
     padding: 0.5em;
     margin:0.5rem;
     background-color: #72a843;
-    border-radius: 10px;
 }
