@@ -1,0 +1,59 @@
+body {
+    background-image: url("img/Naha_Okinawa_Japan_Garbage-truck-01.jpg");
+    background-position: center;
+    background-size: auto;
+    min-height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body > div {
+    background-color: rgb(255,255,255,.5);
+    height: 90%;
+    width: 90%;
+    border-radius: 1px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+#content {  
+    margin: 1em;
+    background-color: #d3ffad;
+    display: flex;
+    flex-direction: column;
+}
+
+main > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    min-width: 10rem;
+    max-width: 20vw;
+    min-height: 5rem;
+    max-height: max-content;
+    margin:1em;
+    border-radius: 20px;
+    background-color: lightgreen;
+}
+
+.orak{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ora{
+    width: 80%;
+    padding: 0.5em;
+    margin:0.5rem;
+    background-color: #72a843;
+    border-radius: 10px;
+}
