@@ -1,3 +1,20 @@
+:root{
+    --light-background-color: rgb(255,255,255,.5);
+    --light-main-color: #d3ffad;
+    --light-card-color: lightgreen;
+    --light-ora-color: #72a843;
+    --light-font-color: black;
+    --dark-background-color: rgb(11,11,11,.5);
+    --dark-main-color: #3e502f;
+    --dark-card-color: rgb(48, 105, 48);
+    --dark-ora-color: #547a33;
+    --dark-font-color: white;
+    --current-background-color: var(--light-background-color);
+    --current-main-color: var(--light-main-color);
+    --current-card-color: var(--light-card-color);
+    --current-ora-color: var(--light-ora-color);
+    --current-font-color: var(--light-font-color);
+}
 body {
     background-image: url("img/Naha_Okinawa_Japan_Garbage-truck-01.jpg");
     background-position: center;
@@ -7,6 +24,7 @@ body {
     display: flex;
     justify-content: space-around;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--current-font-color);
 }
 
 div {
@@ -14,7 +32,7 @@ div {
 }
 
 body > div {
-    background-color: rgb(255,255,255,.5);
+    background-color:var(--current-background-color);
     height: 90%;
     width: 90%;
     text-align: center;
@@ -24,7 +42,7 @@ body > div {
 
 #content {  
     margin: 1em;
-    background-color: #d3ffad;
+    background-color: var(--current-main-color);
     display: flex;
     flex-direction: column;
 }
@@ -45,13 +63,25 @@ main > div{
     align-items: center;
 }
 
+button {
+    background-color: var(--current-card-color);
+    border-top: 2px solid var(--current-background-color);
+    border-left: 2px solid var(--current-background-color);
+    border-bottom: 2px solid var(--current-ora-color);
+    border-right: 2px solid var(--current-ora-color);
+    width: 3rem;
+    align-self: flex-end;
+    margin: 1em;
+    font-weight: bold;
+}
+
 .card {
     min-width: 15rem;
-    max-width: 20vw;
+    max-width: 15vw;
     min-height: 5rem;
     max-height: max-content;
     margin:1em;
-    background-color: lightgreen;
+    background-color:var(--current-card-color);
 }
 
 .orak{
@@ -65,5 +95,41 @@ main > div{
     width: 80%;
     padding: 0.5em;
     margin:0.5rem;
-    background-color: #72a843;
+    background-color:var(--current-ora-color);
+}
+
+.dark {
+    --current-background-color: var(--dark-background-color);
+        --current-main-color: var(--dark-main-color);
+        --current-card-color: var(--dark-card-color);
+        --current-ora-color: var(--dark-ora-color);
+        --current-font-color: var(--dark-font-color);
+}
+
+.light {
+    --current-background-color: var(--light-background-color);
+        --current-main-color: var(--light-main-color);
+        --current-card-color: var(--light-card-color);
+        --current-ora-color: var(--light-ora-color);
+        --current-font-color: var(--light-font-color);
+}
+
+@media (prefers-color-scheme:dark){
+    :root {
+        --current-background-color: var(--dark-background-color);
+        --current-main-color: var(--dark-main-color);
+        --current-card-color: var(--dark-card-color);
+        --current-ora-color: var(--dark-ora-color);
+        --current-font-color: var(--dark-font-color);
+    }
+}
+
+@media (prefers-color-scheme:light){
+    :root {
+        --current-background-color: var(--light-background-color);
+        --current-main-color: var(--light-main-color);
+        --current-card-color: var(--light-card-color);
+        --current-ora-color: var(--light-ora-color);
+        --current-font-color: var(--light-font-color);
+    }
 }

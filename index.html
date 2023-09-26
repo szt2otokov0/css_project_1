@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>szemétszállítási rend</title>
 </head>
+
 <body>
     <div>
         <div id="content">
@@ -18,60 +20,46 @@
                     <div class="card">
                         <h3>Hétfő</h3>
                         <div class="orak">
-                            <div class="ora">11:00 - 14:00: Rókus, fekete kuka</div>
-                            <div class="ora"></div>
+                            <div class="ora">08:00-09:00, Rózsa utca - barna kuka
+                            </div>
+                            <div class="ora">10:00-11:00, Szilva utca - sárga kuka</div>
+                            <div class="ora">12:00-13:00, Körte utca - fekete kuka</div>
+                            <div class="ora">14:00-15:00, Dió utca - barna kuka
+                            </div>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Kedd</h3>
                         <div class="orak">
-                            <div class="ora">1</div>
-                            <div class="ora">2</div>
-                            <div class="ora">3</div>
-                            <div class="ora">4</div>
-                            <div class="ora">5</div>
-                            <div class="ora">6</div>
-                            <div class="ora">7</div>
-                            <div class="ora">8</div>
+                            <div class="ora">09:00-10:00, Alma utca - fekete kuka</div>
+                            <div class="ora">11:00-12:00, Cseresznye utca - sárga kuka</div>
+                            <div class="ora">13:00-14:00, Meggy utca - barna kuka</div>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Szerda</h3>
                         <div class="orak">
-                            <div class="ora">1</div>
-                            <div class="ora">2</div>
-                            <div class="ora">3</div>
-                            <div class="ora">4</div>
-                            <div class="ora">5</div>
-                            <div class="ora">6</div>
-                            <div class="ora">7</div>
-                            <div class="ora">8</div>
+                            <div class="ora">08:00-09:00, Gesztenye utca - fekete kuka</div>
+                            <div class="ora">10:00-11:00, Mandula utca - sárga kuka</div>
+                            <div class="ora">12:00-13:00, Mogyoró utca - fekete kuka</div>
+                            <div class="ora">14:00-15:00, Narancs utca - barna kuka</div>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Csütörtök</h3>
                         <div class="orak">
-                            <div class="ora">1</div>
-                            <div class="ora">2</div>
-                            <div class="ora">3</div>
-                            <div class="ora">4</div>
-                            <div class="ora">5</div>
-                            <div class="ora">6</div>
-                            <div class="ora">7</div>
-                            <div class="ora">8</div>
+                            <div class="ora">12. 09:00-10:00, Sárgabarack utca - barna kuka</div>
+                            <div class="ora">11:00-12:00, Kivi utca - sárga kuka</div>
+                            <div class="ora">13:00-14:00, Szeder utca - fekete kuka</div>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Péntek</h3>
                         <div class="orak">
-                            <div class="ora">1</div>
-                            <div class="ora">2</div>
-                            <div class="ora">3</div>
-                            <div class="ora">4</div>
-                            <div class="ora">5</div>
-                            <div class="ora">6</div>
-                            <div class="ora">7</div>
-                            <div class="ora">8</div>
+                            <div class="ora">08:00-09:00, Barack utca - fekete kuka</div>
+                            <div class="ora">10:00-11:00, Dinnye utca - sárga kuka</div>
+                            <div class="ora">12:00-13:00, Meggyfa utca - barna kuka</div>
+                            <div class="ora">14:00-15:00, Csapágy utca - fekete kuka</div>
                         </div>
                     </div>
                 </div>
@@ -79,35 +67,40 @@
                     <div class="card">
                         <h3>Szombat</h3>
                         <div class="orak">
-                            <div class="ora">1</div>
-                            <div class="ora">2</div>
-                            <div class="ora">3</div>
-                            <div class="ora">4</div>
-                            <div class="ora">5</div>
-                            <div class="ora">6</div>
-                            <div class="ora">7</div>
-                            <div class="ora">8</div>
+                            <div class="ora">09:00-10:00, Citrom utca - sárga kuka</div>
+                            <div class="ora">11:00-12:00, Eper utca - fekete kuka</div>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Vasárnap</h3>
                         <div class="orak">
-                            <div class="ora">1</div>
-                            <div class="ora">2</div>
-                            <div class="ora">3</div>
-                            <div class="ora">4</div>
-                            <div class="ora">5</div>
-                            <div class="ora">6</div>
-                            <div class="ora">7</div>
-                            <div class="ora">8</div>
+                            <div class="ora">10:00-11:00, Cukor utca - barna kuka</div>
+                            <div class="ora">12:00-13:00, Méz utca - sárga kuka</div>
                         </div>
                     </div>
                 </div>
             </main>
+            <button onclick="valt()">Sötét mód</button>
             <footer>
                 Photo by CEphoto, Uwe Aranas
+                <script>
+                    let theme = true;
+                    let root = document.body;
+
+                    function valt(){
+                        if(theme){
+                           root.className = "dark"; 
+                           theme = false;
+                        } 
+                        else{
+                            root.className = "light";
+                            theme = true;
+                        } 
+                    }
+                </script>
             </footer>
         </div>
     </div>
 </body>
+
 </html>
