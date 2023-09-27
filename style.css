@@ -42,12 +42,17 @@ body > div {
 
 #content {  
     margin: 1em;
-    background-color: var(--current-main-color);
+    
     display: flex;
     flex-direction: column;
 }
 
+header {
+    background-color: var(--current-main-color);
+}
+
 main {
+    background-color: var(--current-main-color);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,15 +68,25 @@ main > div{
     align-items: center;
 }
 
+footer {
+    height: 10em;
+    margin: 1em;
+    background-color: var(--current-main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 button {
     background-color: var(--current-card-color);
     border-top: 2px solid var(--current-background-color);
     border-left: 2px solid var(--current-background-color);
     border-bottom: 2px solid var(--current-ora-color);
     border-right: 2px solid var(--current-ora-color);
-    width: 3rem;
-    align-self: flex-end;
-    margin: 1em;
+    border-radius: 10px;
+    width: 5rem;
+    padding: 0.5em 0.2em;
     font-weight: bold;
 }
 
