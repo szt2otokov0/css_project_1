@@ -85,17 +85,20 @@
                 Photo by CEphoto, Uwe Aranas
                 <script>
                     let theme = true;
-                    let root = document.body;
+                    let root;
+                    window.onload = () => {
+                        root = document.body;
+                    }
 
-                    function valt(){
-                        if(theme){
-                           root.className = "dark"; 
-                           theme = false;
-                        } 
-                        else{
+                    function valt() {
+                        if (theme) {
+                            root.className = "dark";
+                            theme = false;
+                        }
+                        else {
                             root.className = "light";
                             theme = true;
-                        } 
+                        }
                     }
                 </script>
             </footer>
