@@ -1,10 +1,10 @@
-:root{
-    --light-background-color: rgb(255,255,255,.5);
+:root {
+    --light-background-color: rgb(255, 255, 255, .5);
     --light-main-color: #d3ffad;
     --light-card-color: lightgreen;
     --light-ora-color: #72a843;
     --light-font-color: black;
-    --dark-background-color: rgb(11,11,11,.5);
+    --dark-background-color: rgb(11, 11, 11, .5);
     --dark-main-color: #3e502f;
     --dark-card-color: rgb(48, 105, 48);
     --dark-ora-color: #547a33;
@@ -15,6 +15,7 @@
     --current-ora-color: var(--light-ora-color);
     --current-font-color: var(--light-font-color);
 }
+
 body {
     background-image: url("img/Naha_Okinawa_Japan_Garbage-truck-01.jpg");
     background-position: center;
@@ -31,8 +32,8 @@ div {
     border-radius: 20px;
 }
 
-body > div {
-    background-color:var(--current-background-color);
+body>div {
+    background-color: var(--current-background-color);
     height: 90%;
     width: 90%;
     text-align: center;
@@ -40,9 +41,9 @@ body > div {
     margin: auto;
 }
 
-#content {  
+#content {
     margin: 1em;
-    
+
     display: flex;
     flex-direction: column;
 }
@@ -60,7 +61,7 @@ main {
     align-items: center;
 }
 
-main > div{
+main>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,41 +96,41 @@ button {
     max-width: 15vw;
     min-height: 5rem;
     max-height: max-content;
-    margin:1em;
-    background-color:var(--current-card-color);
+    margin: 1em;
+    background-color: var(--current-card-color);
 }
 
-.orak{
+.orak {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.ora{
+.ora {
     width: 80%;
     padding: 0.5em;
-    margin:0.5rem;
-    background-color:var(--current-ora-color);
+    margin: 0.5rem;
+    background-color: var(--current-ora-color);
 }
 
 .dark {
     --current-background-color: var(--dark-background-color);
-        --current-main-color: var(--dark-main-color);
-        --current-card-color: var(--dark-card-color);
-        --current-ora-color: var(--dark-ora-color);
-        --current-font-color: var(--dark-font-color);
+    --current-main-color: var(--dark-main-color);
+    --current-card-color: var(--dark-card-color);
+    --current-ora-color: var(--dark-ora-color);
+    --current-font-color: var(--dark-font-color);
 }
 
 .light {
     --current-background-color: var(--light-background-color);
-        --current-main-color: var(--light-main-color);
-        --current-card-color: var(--light-card-color);
-        --current-ora-color: var(--light-ora-color);
-        --current-font-color: var(--light-font-color);
+    --current-main-color: var(--light-main-color);
+    --current-card-color: var(--light-card-color);
+    --current-ora-color: var(--light-ora-color);
+    --current-font-color: var(--light-font-color);
 }
 
-@media (prefers-color-scheme:dark){
+@media (prefers-color-scheme:dark) {
     :root {
         --current-background-color: var(--dark-background-color);
         --current-main-color: var(--dark-main-color);
@@ -139,7 +140,7 @@ button {
     }
 }
 
-@media (prefers-color-scheme:light){
+@media (prefers-color-scheme:light) {
     :root {
         --current-background-color: var(--light-background-color);
         --current-main-color: var(--light-main-color);
