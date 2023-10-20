@@ -1,0 +1,128 @@
+[
+    {
+        "day": "Hétfő",
+        "start": "08:00",
+        "end": "09:00",
+        "street": "Rózsa utca",
+        "bin": "barna kuka"
+    },
+    {
+        "day": "Hétfő",
+        "start": "10:00",
+        "end": "11:00",
+        "street": "Szilva utca",
+        "bin": "sárga kuka"
+    },
+    {
+        "day": "Hétfő",
+        "start": "12:00",
+        "end": "13:00",
+        "street": "Körte utca",
+        "bin": "fekete kuka"
+    },
+    {
+        "day": "Hétfő",
+        "start": "14:00",
+        "end": "15:00",
+        "street": "Dió utca",
+        "bin": "barna kuka"
+    },
+    {
+        "day": "Kedd",
+        "start": "09:00",
+        "end": "10:00",
+        "street": "Alma utca",
+        "bin": "fekete kuka"
+    },
+    {
+        "day": "Kedd",
+        "start": "11:00",
+        "end": "12:00",
+        "street": "Cseresznye utca",
+        "bin": "sárga kuka"
+    },
+    {
+        "day": "Kedd",
+        "start": "13:00",
+        "end": "14:00",
+        "street": "Meggy utca",
+        "bin": "barna kuka"
+    },
+    {
+        "day": "Szerda",
+        "start": "08:00",
+        "end": "09:00",
+        "street": "Gesztenye utca",
+        "bin": "fekete kuka"
+    },
+    {
+        "day": "Szerda",
+        "start": "10:00",
+        "end": "11:00",
+        "street": "Mandula utca",
+        "bin": "sárga kuka"
+    },
+    {
+        "day": "Szerda",
+        "start": "12:00",
+        "end": "13:00",
+        "street": "Mogyoró utca",
+        "bin": "fekete kuka"
+    },
+    {
+        "day": "Szerda",
+        "start": "14:00",
+        "end": "15:00",
+        "street": "Narancs utca",
+        "bin": "barna kuka"
+    },
+    {
+        "day": "Csütörtök",
+        "start": "12. 09:00",
+        "end": "10:00",
+        "street": "Sárgabarack utca",
+        "bin": "barna kuka"
+    },
+    {
+        "day": "Csütörtök",
+        "start": "11:00",
+        "end": "12:00",
+        "street": "Kivi utca",
+        "bin": "sárga kuka"
+    },
+    {
+        "day": "Csütörtök",
+        "start": "13:00",
+        "end": "14:00",
+        "street": "Szeder utca",
+        "bin": "fekete kuka"
+    },
+    {
+        "day": "Péntek",
+        "start": "08:00",
+        "end": "09:00",
+        "street": "Barack utca",
+        "bin": "fekete kuka"
+    },
+    {
+        "day": "Péntek",
+        "start": "10:00",
+        "end": "11:00",
+        "street": "Dinnye utca",
+        "bin": "sárga kuka"
+    },
+    {
+        "day": "Péntek",
+        "start": "12:00",
+        "end": "13:00",
+        "street": "Meggyfa utca",
+        "bin": "barna kuka"
+    },
+    {
+        "day": "Péntek",
+        "start": "14:00",
+        "end": "15:00",
+        "street": "Csapágy utca",
+        "bin": "fekete kuka"
+    }
+]
