@@ -17,7 +17,7 @@
             </header>
             <main>
                 <div id="deck">
-                    <div class="card">
+                    <!--<div class="card">
                         <h3>Hétfő</h3>
                         <div class="orak">
                             <div class="ora">08:00-09:00, Rózsa utca - barna kuka
@@ -76,34 +76,16 @@
                         <div class="orak">
                             <div class="ora">10:00-11:00, Cukor utca - barna kuka</div>
                             <div class="ora">12:00-13:00, Méz utca - sárga kuka</div>
-                        </div>
-                    </div>
+                        </div>-->
                 </div>
-            </main>
-            <footer>
-                <button onclick="valt()">Sötét mód</button>
-                Photo by CEphoto, Uwe Aranas
-                <script>
-                    let theme = true;
-                    let root;
-                    window.onload = () => {
-                        root = document.body;
-                    }
-
-                    function valt() {
-                        if (theme) {
-                            root.className = "dark";
-                            theme = false;
-                        }
-                        else {
-                            root.className = "light";
-                            theme = true;
-                        }
-                    }
-                </script>
-                <script src="js.js"></script>
-            </footer>
         </div>
+        </main>
+        <footer>
+            <button onclick="valt()">Sötét mód</button>
+            Photo by CEphoto, Uwe Aranas
+            <script src="js.js"></script>
+        </footer>
+    </div>
     </div>
 </body>
 
